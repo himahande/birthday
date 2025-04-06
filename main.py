@@ -28,7 +28,7 @@ for i in range(test_iterations):
             message = client.messages.create(
                 from_='whatsapp:+14155238886',
                 to=f'whatsapp:{mobile}',
-                content_sid='HXb1c496a934cccfcf9ea2726d7ac15120',
+                content_sid='HXef62361731273ee6f2c29e67b052c01d',
                 content_variables=content_vars
             )
             print(f"Sent test reminder for {name}. Message SID: {message.sid}")
