@@ -8,7 +8,7 @@ account_sid = os.getenv('TWILIO_SID')
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
 client = Client(account_sid, auth_token)
 
-df = pd.read_excel('Birthday.xlsx', parse_dates=['Date Of Birth'])
+df = pd.read_excel('birthdays.xlsx', parse_dates=['Date Of Birth'])
 
 if "Test" in df.columns:
     test_rows = df[df["Test"] == True]
